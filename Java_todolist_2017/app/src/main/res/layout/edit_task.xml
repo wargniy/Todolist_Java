@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/task_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Title"
+        android:inputType="text"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="center"
+        tools:layout_editor_absoluteY="center" />
+
+    <EditText
+        android:id="@+id/task_desc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/task_title"
+        android:hint="descritption"
+        android:inputType="text"
+        android:textSize="15sp"
+        tools:layout_editor_absoluteX="center"
+        tools:layout_editor_absoluteY="center" />
+    <EditText
+        android:id="@+id/task_time"
+        android:layout_below="@+id/task_desc"
+        android:textSize="15sp"
+        android:hint="DD/MM/YYYY"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="date" />
+
+    <CheckBox
+        android:id="@+id/task_done"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Done" />
+
+
+</LinearLayout>
